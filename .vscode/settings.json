@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./ML models"
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic"
+}

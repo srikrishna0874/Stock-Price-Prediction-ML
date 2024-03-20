@@ -1,0 +1,14 @@
+tensorflow
+nltk==3.5
+keras
+numpy
+streamlit==0.52.1
+seaborn==0.11.1
+flask
+pandas
+matplotlib
+scikit_learn
+statsmodels
+yfinance
+gunicorn
+firebase-admin
