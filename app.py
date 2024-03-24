@@ -6,11 +6,10 @@ import yfinance as yf
 from flask import Flask, Response, render_template, redirect, send_file, url_for, request, send_from_directory
 import datetime as dt
 import pandas as pd
-from Firebase.firebase import getImageLinkFromFirebase
 from ML_models.lstm import *
 from ML_models.arima import *
 from ML_models.linear_regression import *
-from Firebase import *
+from Firebase.firebase import *
 import json
 from datetime import date
 
@@ -54,7 +53,14 @@ def common_ml_code(quote):
         list_of_predictions_using_lr.append(float(i))
     today_date = date.today()
     today_date_in_string = today_date.strftime("%d/%m/%Y")
+    today_date_in_string_for_firebase = today_date.strftime("%d-%m-%Y")
     today_stock = today_stock.round(2)
+    uploadARIMAfile('static/ARIMA_'+quote+'.png',
+                    today_date_in_string_for_firebase, quote)
+    uploadLSTMfile('static/LSTM_'+quote+'.png',
+                   today_date_in_string_for_firebase, quote)
+    uploadLINEARREGRESSIONfile(
+        'static/LR_'+quote+'.png', today_date_in_string_for_firebase, quote)
     result_images = getImageLinkFromFirebase(quote)
     new_data = {
         today_date_in_string: {

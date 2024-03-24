@@ -16,18 +16,21 @@ def uploadARIMAfile(file_path, today_date, quote):
     destination_blob_name = "ARIMA/"+today_date+"/"+quote
     blob = bucket.blob(destination_blob_name)
     blob.upload_from_filename(file_path)
+    print("upload successfully in ARIMA")
 
 
 def uploadLSTMfile(file_path, today_date, quote):
     destination_blob_name = "LSTM/"+today_date+"/"+quote
     blob = bucket.blob(destination_blob_name)
     blob.upload_from_filename(file_path)
+    print("upload successfully in LSTM")
 
 
 def uploadLINEARREGRESSIONfile(file_path, today_date, quote):
     destination_blob_name = "LINEAR REGRESSION/"+today_date+"/"+quote
     blob = bucket.blob(destination_blob_name)
     blob.upload_from_filename(file_path)
+    print("upload successfully in LR")
 
 
 def uploadFileToFirebaseStorage(quote):
