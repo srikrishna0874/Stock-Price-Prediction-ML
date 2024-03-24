@@ -63,6 +63,38 @@
                     "LINEAR REGRESSION": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LINEAR%20REGRESSION/23-03-2024/AAPL?Expires=1719817355&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=W3%2BU59WJ305TCCRl0fGcGZgk3HNwsX0pJWMY8fTFR%2F9ij41%2BPdh9SN8Tc7oY1y7GjrCiV6rCga6cGSJImsqIMSNwntu7GSMGsudwKJWNex%2FX7t0VId58bynbTs5og5hwUu4pfYuGrDQwSCNOhmbnhgWdfKOzbF6GyGgj3T3a4sFaWZssXdZEM5fH99jb3%2BVgg%2F%2F%2FB67sZYkDo7aDPW2pRqwNsokefnJC5fqVZs%2FPrjZJ6%2BNICEaABejlp3LsYVMTt6zWufdk7Ez82kd%2BHsvAoiVYHE6EWsPYKucQobYu4cx5IzY9hGJPrirKhK735a2q%2FGiJ2qNyt5aMdmF%2F48qaSQ%3D%3D"
                 }
             }
+        },
+        {
+            "24/03/2024": {
+                "LSTM_ERROR": 5.452529084535046,
+                "LSTM_PREDICTION": 172.80992126464844,
+                "ARIMA_ERROR": 2.2056145817978328,
+                "ARIMA PREDICTION": 178.62143785040578,
+                "LINEAR_REGRESSSION_ERROR": 8.169035338400056,
+                "LINEAR_REGRESSION_PREDICTION": 178.74316032416706,
+                "NEXT_SEVEN_DAYS_RESULTS": [
+                    178.74316032416706,
+                    178.38248024448967,
+                    179.42654653680992,
+                    181.6665314598466,
+                    184.12481588661666,
+                    177.19604785904266,
+                    178.0597741115242
+                ],
+                "today_stock_results": {
+                    "today_open": 171.76,
+                    "today_close": 172.28,
+                    "today_high": 173.05,
+                    "today_low": 170.06,
+                    "today_vol": 71106600.0,
+                    "today_adj_close": 172.28
+                },
+                "PREDICTED_IMAGES": {
+                    "LSTM": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LSTM/24-03-2024/AAPL?Expires=1719900400&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=Mkhp41s70SwU4D2dQwPEB25jrVGafCiPMtewb8mSWCVwyYt2gWUuxV7n4vD2vm01B%2BOLCjLcw8TrVhosXGVYUBhBIlxnhwaTuyRXZnXs39LgiUMKwYN8g6%2BC%2FzamMxvDEZyokehdXALKnU3jEiiaORlLvLkErUBUEhD6rCf9CB4emRMHc9PFc4aa9vrPDoJIfT8QcEWDljaXCu020QnrShTzqHlz%2BwxZYcWe181FcMNRvLt4qZ0SAmZU7BIm8Qj022LEMv6QsQ%2Ba2Mdxqddfk%2FvLcll6QJODc9uVhmxslH7Jx8vBntvZgnnECGITUxJbUIGbU256YrfxysFc9BbLOQ%3D%3D",
+                    "ARIMA": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/ARIMA/24-03-2024/AAPL?Expires=1719900400&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=SXfxzqdawi3JILh9Xu0jIfuva4A7sza0N0Vj3fAokRyvQ8c9U3nyawdWD6gSitC%2BY5h3xVnNfoG9oTvnDF%2FRRGS2Q97VTtqu4p421hJ4Z8J5k10Zbd0rnQt40c%2FLyIdKcpDVba18FFzUhgA89qAyJe5PfHL1cmQGZuoGmZ0rC2smFeBN306V4ZEpexN67K%2B1OZf9zjP1SRa5qf1qjGPKQnWJDCsdJ8AaXrUFSSV14LJ74JVV%2FDP4ppt0dYJPHow5frnoC4Tg1Jwbuai83IUYgT%2F22geyQdF8W9kuLNQt%2FA9MXhpk%2BtdC6m92cSh7CZ%2BoIgQMod%2Fv4s0i%2FIMUiRZAaw%3D%3D",
+                    "LINEAR REGRESSION": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LINEAR%20REGRESSION/24-03-2024/AAPL?Expires=1719900400&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=S9tAHwWBQHLuck9j3PK%2FQp91u9EccFRg2kPd1KvFy2zGsDRe%2FvwMPb67K1eVTyarLls7%2FgUMGmLnsCSg%2BFvNFWu0dP%2F7rT2J8rfcsyoOZijTVAfwvmUqMjsnxLH%2FxxUqVDtkit0jFKlNtZlpV8HD1NHGYNWyJYW5gTwghrRSM6%2BReoTFCQNhJyXoAhI5eDpxwyNSYKenrz1mH7fYVrHzXjZFJu%2BkP%2B4ZnIRDkJB3ngx7Iy2ayxMnhNYnq6LcwxcWFu1KbDPxJoeUkTdMg90VrL4hqeGBn8ERWUrMwED45B2rtc%2FwOSedAYbwwnvoIdcsnlcMpjJ7degsHiUxUkknFw%3D%3D"
+                }
+            }
         }
     ],
     "AMZN": [
