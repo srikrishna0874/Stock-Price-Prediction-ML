@@ -61,6 +61,8 @@ def common_ml_code(quote):
                    today_date_in_string_for_firebase, quote)
     uploadLINEARREGRESSIONfile(
         'static/LR_'+quote+'.png', today_date_in_string_for_firebase, quote)
+    uploadTrendsFile('static/trends/'+quote+'.png',
+                     today_date_in_string_for_firebase, quote)
     result_images = getImageLinkFromFirebase(quote)
     new_data = {
         today_date_in_string: {
@@ -82,7 +84,8 @@ def common_ml_code(quote):
             'PREDICTED_IMAGES': {
                 'LSTM': result_images[1],
                 'ARIMA': result_images[0],
-                'LINEAR REGRESSION': result_images[2]
+                'LINEAR REGRESSION': result_images[2],
+                'TREND': result_images[3]
             }
         }
     }

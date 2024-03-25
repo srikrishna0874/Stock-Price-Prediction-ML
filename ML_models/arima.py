@@ -40,6 +40,7 @@ def ARIMA_ALGORITHM(df, quote):
         Quantity_date = Quantity_date.drop(['Date'], axis=1)
         fig = plt.figure(figsize=(7.2, 4.8), dpi=65)
         plt.plot(Quantity_date)
+        plt.savefig('static/trends/'+quote+'.png')
 
         quantity = Quantity_date.values
         size = int(len(quantity)*0.8)

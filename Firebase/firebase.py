@@ -1,3 +1,4 @@
+from sqlite3 import Blob
 import firebase_admin
 from firebase_admin import credentials, storage
 from datetime import datetime, timedelta
@@ -33,15 +34,13 @@ def uploadLINEARREGRESSIONfile(file_path, today_date, quote):
     print("upload successfully in LR")
 
 
-def uploadFileToFirebaseStorage(quote):
+def uploadTrendsFile(file_path, today_date, quote):
+    destination_blob_name = "TRENDS/"+today_date+"/"+quote
+    blob = bucket.blob(destination_blob_name)
+    blob.upload_from_filename(file_path)
+    print("trend image uploaded succesfully")
 
-    today_date = datetime.today().strftime("%d-%m-%Y")
-    arimaFile = "static/ARIMA_"+quote+".png"
-    lstmFile = "static/LSTM_"+quote+".png"
-    lrFile = "static/LR_"+quote+".png"
-    uploadARIMAfile(arimaFile, today_date, quote)
-    uploadLINEARREGRESSIONfile(lrFile, today_date, quote)
-    uploadLSTMfile(lstmFile, today_date, quote)
+
 
 
 def getARIMAlink(quote, today_date):
@@ -66,11 +65,17 @@ def getLRlink(quote, today_date):
     return file_url
 
 
+def getTrendLink(quote, today_date):
+    file_name = "TRENDS/"+today_date+"/"+quote
+    blob = bucket.blob(file_name)
+    file_url = blob.generate_signed_url(expiration=timedelta(days=100))
+    return file_url
+
+
 def getImageLinkFromFirebase(quote):
     today_date = datetime.today().strftime("%d-%m-%Y")
     arimalink = getARIMAlink(quote, today_date)
     lstmlink = getLSTMlink(quote, today_date)
     lrlink = getLRlink(quote, today_date)
-    return arimalink, lstmlink, lrlink
-
-
+    trendslink = getTrendLink(quote, today_date)
+    return arimalink, lstmlink, lrlink, trendslink
