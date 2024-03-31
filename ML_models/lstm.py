@@ -10,6 +10,8 @@ from keras.layers import Dropout
 from keras.layers import LSTM
 import math
 
+from ML_models.sentiment import SENTIMENT_ANALYSIS
+
 
 def LSTM_ALGORITHM(df,quote):
 
@@ -115,7 +117,7 @@ def LSTM_ALGORITHM(df,quote):
     plt.plot(predicted_stock_price, 'r', label='Predicted Price')
     plt.ylabel('Close Price')
 
-    plt.savefig('static/LSTM_'+quote+'.png')
+    plt.savefig('static/LSTM/'+quote+'.png')
     plt.close(fig)
 
     error_lstm = math.sqrt(mean_squared_error(
@@ -127,5 +129,6 @@ def LSTM_ALGORITHM(df,quote):
     forecasted_stock_price = sc.inverse_transform(forecasted_stock_price)
 
     lstm_pred = forecasted_stock_price[0, 0]
+    recent_tweets, global_polarity, tw_polarity = SENTIMENT_ANALYSIS(quote)
 
-    return lstm_pred, error_lstm
+    return lstm_pred, error_lstm, recent_tweets, global_polarity, tw_polarity

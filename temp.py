@@ -1,24 +1,14 @@
-# Python 3
-import http.client
-import urllib.parse
-import json
+import requests
 
-conn = http.client.HTTPSConnection('api.marketaux.com')
+url = "https://bloomberg-market-and-financial-news.p.rapidapi.com/stock/get-financials"
 
-params = urllib.parse.urlencode({
-    'api_token': 'PLeOSP7c0Yl1pyrP0me9jKNm5BZ25E9F6WpTvq2G',
-    'symbols': 'AAPL',
-    'limit': 5,
-})
+querystring = {"id": "aapl:us"}
 
-conn.request('GET', '/v1/news/all?{}'.format(params))
+headers = {
+	"X-RapidAPI-Key": "40f9fd6c94msh04081f1a0f50bcap1b0be2jsn98e3b0c68bff",
+	"X-RapidAPI-Host": "bloomberg-market-and-financial-news.p.rapidapi.com"
+}
 
-res = conn.getresponse()
-data = res.read()
-data = data.decode()
+response = requests.get(url, headers=headers, params=querystring)
 
-json_object = json.loads(data)
-#for i in range(len(json_object)):
-s = json_object['data'][2]
-print(s)
-
+print(response.json())

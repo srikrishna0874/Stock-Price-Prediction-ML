@@ -41,6 +41,11 @@ def uploadTrendsFile(file_path, today_date, quote):
     print("trend image uploaded succesfully")
 
 
+def uploadSentimentChartsFile(file_path, today_date, quote):
+    destination_blob_name = "SENTIMENT_CHARTS/"+today_date+"/"+quote
+    blob = bucket.blob(destination_blob_name)
+    blob.upload_from_filename(file_path)
+    print("upload successfully in SENTIMENT_CHARTS")
 
 
 def getARIMAlink(quote, today_date):
@@ -72,10 +77,18 @@ def getTrendLink(quote, today_date):
     return file_url
 
 
+def getSentimentLink(quote, today_date):
+    file_name = "SENTIMENT_CHARTS/"+today_date+"/"+quote
+    blob = bucket.blob(file_name)
+    file_url = blob.generate_signed_url(expiration=timedelta(days=100))
+    return file_url
+
+
 def getImageLinkFromFirebase(quote):
     today_date = datetime.today().strftime("%d-%m-%Y")
     arimalink = getARIMAlink(quote, today_date)
     lstmlink = getLSTMlink(quote, today_date)
     lrlink = getLRlink(quote, today_date)
     trendslink = getTrendLink(quote, today_date)
-    return arimalink, lstmlink, lrlink, trendslink
+    sentimentlink = getSentimentLink(quote, today_date)
+    return arimalink, lstmlink, lrlink, trendslink, sentimentlink

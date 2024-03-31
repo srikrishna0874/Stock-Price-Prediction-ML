@@ -1,17 +1,55 @@
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from numpy import exp
+from nltk.stem.porter import PorterStemmer
+from nltk.corpus import stopwords
+import finnhub
+from datetime import date
+import json
+from Firebase.firebase import *
+from ML_models.sentiment import *
+from ML_models.linear_regression import *
+from ML_models.arima import *
+from ML_models.lstm import *
+import pandas as pd
+import datetime as dt
+from flask import Flask, Response, render_template, redirect, send_file, url_for, request, send_from_directory
+import yfinance as yf
+import requests
 import math
 import re
-import os
-import requests
-import yfinance as yf
-from flask import Flask, Response, render_template, redirect, send_file, url_for, request, send_from_directory
-import datetime as dt
-import pandas as pd
-from ML_models.lstm import *
-from ML_models.arima import *
-from ML_models.linear_regression import *
-from Firebase.firebase import *
-import json
-from datetime import date
+
+
+
+def final_result(global_polarity, today_stock, mean):
+    if today_stock.iloc[-1]['Close'] < mean:
+        if global_polarity > 0.5:
+            idea = "RISE"
+            decision = "BUY"
+            print()
+            print(
+                "##############################################################################")
+            print("According to the ML Predictions and Sentiment Analysis of Tweets, a",
+                  idea, "is expected => ", decision)
+        elif global_polarity <= 0.5:
+            idea = "FALL"
+            decision = "SELL"
+            print()
+            print(
+                "##############################################################################")
+            print("According to the ML Predictions and Sentiment Analysis of Tweets, a",
+                  idea, "is expected => ", decision)
+    else:
+        idea = "FALL"
+        decision = "SELL"
+        print()
+        print(
+            "##############################################################################")
+        print("According to the ML Predictions and Sentiment Analysis of Tweets, a",
+              idea, "is expected => ", decision)
+    return idea, decision
 
 
 def fetching_required_dataset(quote):
@@ -44,10 +82,14 @@ def fetching_required_dataset(quote):
 def common_ml_code(quote):
 
     df, today_stock = fetching_required_dataset(quote)
-    lstm_pred, error_lstm = LSTM_ALGORITHM(df, quote)  # type: ignore
+    # type: ignore
     error_arima, arima_pred = ARIMA_ALGORITHM(df, quote)  # type: ignore
     linear_regression_pred, error_linear_regression, forecast_set = LINEAR_REGRESSION_ALGORITHM(
         df, quote)
+    #recent_tweets, global_polarity, tw_polarity = SENTIMENT_ANALYSIS(quote)
+    lstm_pred, error_lstm, recent_tweets, global_polarity, tw_polarity = LSTM_ALGORITHM(
+        df, quote)
+    mean = forecast_set.mean()
     list_of_predictions_using_lr = []
     for i in forecast_set:
         list_of_predictions_using_lr.append(float(i))
@@ -55,14 +97,16 @@ def common_ml_code(quote):
     today_date_in_string = today_date.strftime("%d/%m/%Y")
     today_date_in_string_for_firebase = today_date.strftime("%d-%m-%Y")
     today_stock = today_stock.round(2)
-    uploadARIMAfile('static/ARIMA_'+quote+'.png',
+    idea, decision = final_result(global_polarity, today_stock, mean)
+    uploadARIMAfile('static/ARIMA/'+quote+'.png',
                     today_date_in_string_for_firebase, quote)
-    uploadLSTMfile('static/LSTM_'+quote+'.png',
+    uploadLSTMfile('static/LSTM/'+quote+'.png',
                    today_date_in_string_for_firebase, quote)
     uploadLINEARREGRESSIONfile(
-        'static/LR_'+quote+'.png', today_date_in_string_for_firebase, quote)
+        'static/LINEAR_REGRESSION/'+quote+'.png', today_date_in_string_for_firebase, quote)
     uploadTrendsFile('static/trends/'+quote+'.png',
                      today_date_in_string_for_firebase, quote)
+    uploadSentimentChartsFile('static/SENTIMENT_CHARTS/'+quote+'.png',today_date_in_string_for_firebase,quote)
     result_images = getImageLinkFromFirebase(quote)
     new_data = {
         today_date_in_string: {
@@ -85,8 +129,13 @@ def common_ml_code(quote):
                 'LSTM': result_images[1],
                 'ARIMA': result_images[0],
                 'LINEAR REGRESSION': result_images[2],
-                'TREND': result_images[3]
-            }
+                'TREND': result_images[3],
+                'SENTIMENT_CHART': result_images[4]
+            },
+            'RECENT_TWEETS': recent_tweets,
+            'OVERALL_RESULT': tw_polarity,
+            'IDEA': idea,
+            'DECISION': decision,
         }
     }
     with open('search_results.json', 'r') as file:
@@ -119,7 +168,7 @@ def search(quote):
 
         if (today_date_present):
             print("Found today's date")
-            return required_result
+            return required_result[todays_date]
 
         else:
             required_result = common_ml_code(quote)

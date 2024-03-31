@@ -54,7 +54,7 @@ def ARIMA_ALGORITHM(df, quote):
         plt.plot(test, 'g', label='Actual Price')
         plt.plot(predictions, 'r', label='Predicted Price')
 
-        plt.savefig('static/ARIMA_'+quote+'.png')
+        plt.savefig('static/ARIMA/'+quote+'.png')
         plt.close(fig)
         arima_pred = predictions[-2]
         print('tomorrow closing price is:', arima_pred)

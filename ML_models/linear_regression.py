@@ -51,7 +51,7 @@ def LINEAR_REGRESSION_ALGORITHM(df, quote):
     plt2.plot(y_test, label='Actual Price')
     plt2.plot(y_test_pred, 'r', label='Predicted Price')
 
-    plt2.savefig('static/LR_'+quote+'.png')
+    plt2.savefig('static/LINEAR_REGRESSION/'+quote+'.png')
     plt2.close(fig)
 
     error_linear_regression = math.sqrt(
