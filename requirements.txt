@@ -12,3 +12,4 @@ statsmodels
 yfinance
 gunicorn
 firebase-admin
+finnhub
