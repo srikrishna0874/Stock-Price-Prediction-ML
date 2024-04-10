@@ -13,3 +13,4 @@ yfinance
 gunicorn
 firebase-admin
 finnhub-python
+nltk
