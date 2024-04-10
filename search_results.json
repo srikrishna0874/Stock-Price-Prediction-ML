@@ -1,123 +1,231 @@
 {
     "AAPL": [
         {
-            "25/03/2024": {
-                "LSTM_ERROR": 7.361636566217274,
-                "LSTM_PREDICTION": 178.79771423339844,
-                "ARIMA_ERROR": 2.2061449798326698,
-                "ARIMA PREDICTION": 178.6214011679661,
-                "LINEAR_REGRESSSION_ERROR": 8.147842946888828,
-                "LINEAR_REGRESSION_PREDICTION": 178.7201904720308,
+            "10/04/2024": {
+                "LSTM_ERROR": 5.022701046971499,
+                "LSTM_PREDICTION": 167.67327880859375,
+                "ARIMA_ERROR": 2.1096543290899956,
+                "ARIMA PREDICTION": 169.58533356864248,
+                "LINEAR_REGRESSSION_ERROR": 9.384278453203553,
+                "LINEAR_REGRESSION_PREDICTION": 176.5752371169166,
                 "NEXT_SEVEN_DAYS_RESULTS": [
-                    178.7201904720308,
-                    178.35976428598076,
-                    179.40309562842967,
-                    181.64150375826543,
-                    184.0980577242051,
-                    177.17416706620804,
-                    178.03728531563192
+                    176.5752371169166,
+                    175.41891157694502,
+                    176.20598631874955,
+                    175.39948824954382,
+                    176.13797501891045,
+                    175.03994911507738,
+                    175.2731624865988
                 ],
                 "today_stock_results": {
-                    "today_open": 171.76,
-                    "today_close": 172.28,
-                    "today_high": 173.05,
-                    "today_low": 170.06,
-                    "today_vol": 71106600.0,
-                    "today_adj_close": 172.28
+                    "today_open": 168.69,
+                    "today_close": 168.69,
+                    "today_high": 170.07,
+                    "today_low": 168.48,
+                    "today_vol": 12673854.0,
+                    "today_adj_close": 168.69
                 },
                 "PREDICTED_IMAGES": {
-                    "LSTM": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LSTM/25-03-2024/AAPL?Expires=1720009221&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=VtZUDwE9%2BCdlEwDSobETk3phHk1AWbUDVMthPe6tMn7MgmfgR%2Fjshf3r9mOwGPbgWoM7f7107loun01%2F7iA63XXqbOgHk1OJXK2DfG6DS4k9o9kOmhpyg9jAya3A4ZdxyvMYXZD%2Bjgvp6EaVON5Novho9nXNjKg1bV6GQWQh6uSX%2BCsUkj1ZH41bhOeobSqlV8cddLPOTWsjfU7BfKyX8jDAB1emKn4fmwRQ1QjLJ32zvqgvV45scCm3c%2Bk%2F7D0ZRdkrdjjiyZOInZNnBCm9wTLd%2BGSBwrYhXn613UvoNdRFUaIVu1qbgVP3zRj2NDBH1dnxlzeCX7r6SYcB%2BvPInA%3D%3D",
-                    "ARIMA": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/ARIMA/25-03-2024/AAPL?Expires=1720009221&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=D2nPQA9vgFpkjX0%2FFyFfwm35jGRsDuiGBj7lTxEnM6Z5Gjl3c7HUNyBSADP4rZVve9GDj3X9owa1FKf1g4SX8mpc8u0MUgqA5YXtnFtXXdLlLqfWHVkcM1uPA3QN5HaadVgjuD0reJUe8ySRtg4bXtWi%2FUfVEGRYdt6UJb76ANKtYP%2BOgOb6dy8lPwwZBsJZAw%2FtQHJxd5xMZmyqeRD%2BZkX9nRYXswJN3Oq5Pkmh7rWJ%2BDdDsXRJCEQFP%2FY%2FEMB3p7P1Ex%2BEczYMlEgpgomS%2Fo7qsmX30u17QJzwzOJozM%2FqlXnumHWa51L5cFUKe%2BAj9KHVonj4fuN2IPCG7QYhOw%3D%3D",
-                    "LINEAR REGRESSION": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LINEAR%20REGRESSION/25-03-2024/AAPL?Expires=1720009221&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=D%2FKD6sA1MPgAUJAt8iKmNfQ3EMV0ySunKPFSOdl2YpIbaAV%2B%2FdrabjiL7P%2FE4naq7E6%2BUj6GLGuEu%2FjTFH7am90%2FHDAJKtBGuFIzt7ALtowqSttGmUO4U%2FF8BnLaKAGjP002FHV2uiIAg6kABUurAqQJgxzFBf5HL4cqAyD11GyppiOEPMTjDliXmahiGpvzUQ4umJXV6vpml31Co3iQaDLyaVvjnFhzXCWUWcIcmggu2JmmvD4n%2BHN9NP5SA8cCPyyThAE2Qz8528%2F39c0PTxOJk%2BB%2B%2Fyj%2BQbqgB4%2FOMdvgp8tLa%2BtbIpUjmF9z6jlgz1AS4ED3WGIQrrcm2Wvszw%3D%3D",
-                    "TREND": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/TRENDS/25-03-2024/AAPL?Expires=1720009221&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=XiV9U%2B58vy0dzRjpDQL9QpK2jglv6ZohZu%2B5yAY51pOWXF%2Fg28vIhccw648eXFUr849Fe1aDeGZNs%2Be61MSus56MmInkeSy6hJYTKwSzUX7ITVgopE2sgHAJWzGGFWIVJCJLZt8yLrky8tosyPLvkrLBFAmNSho%2BsNVphzB9RLv%2BrBTs%2FK3FhbSR8GnyP%2FzpQzi4pg8rkENS0onbiAX7iDdG4nP96MdM%2FJkQ1%2BTxRjHf2FWpuZH%2BjDFqUfZN8TMLuA4EawM3vjohGAbFnbBzZbMD%2FxcwNfxssbOByWvjlml1AXDznjBxCQnKnt1Ojq76OqGy87Kozy9Z%2FIOESEnU1Q%3D%3D"
-                }
-            }
-        },
-        {
-            "30/03/2024": {
-                "LSTM_ERROR": 5.356174393391654,
-                "LSTM_PREDICTION": 172.77142333984375,
-                "ARIMA_ERROR": 2.204848786027322,
-                "ARIMA PREDICTION": 170.12650443487962,
-                "LINEAR_REGRESSSION_ERROR": 8.431190446353376,
-                "LINEAR_REGRESSION_PREDICTION": 184.36119719643068,
-                "NEXT_SEVEN_DAYS_RESULTS": [
-                    184.36119719643068,
-                    177.39439376402854,
-                    178.2628614333887,
-                    176.89813900638316,
-                    175.8101734802829,
-                    179.24584719107924,
-                    177.49937353243826
-                ],
-                "today_stock_results": {
-                    "today_open": 171.75,
-                    "today_close": 171.48,
-                    "today_high": 172.23,
-                    "today_low": 170.51,
-                    "today_vol": 65672700.0,
-                    "today_adj_close": 171.48
-                },
-                "PREDICTED_IMAGES": {
-                    "LSTM": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LSTM/30-03-2024/AAPL?Expires=1720454803&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=jnrQZdeOXy%2BQs0KAse%2F8epk4J07dqo2nvm9JgjjfaU5PLigpgwz1ZSz8KODhvuVZU3S3RcIo6A%2BPpR2jAc%2B2Q0LaodKavvHJ%2FnS3j3t9b%2B5%2Fyb4nNXz5Q3h%2F3Z50%2F4ocVhQnllplNFAULR3wFYyfzOkRuCJBA7A0H3FCiXd9QN8w69YeQtZYpx44hbekk5V2b%2Fk685Emr%2BG0JcpUsZpccGmaDAf7NCPnuoLgyV7wgRdlokGDDL4oRn7E4eqmO25gqFHB2SQ64NY0qs31GO2aehA4B0jdqVsRdbJ1NjSeM6yz5F5s3BVAFrhE7D2re8fUJgqSZjPmF15gXFu9s8Gs%2Bw%3D%3D",
-                    "ARIMA": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/ARIMA/30-03-2024/AAPL?Expires=1720454803&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=GhByyIUqFjBlQU46gN5aW6Mk0zOrA6YMsA%2BioibmAuYQqDMKL5ZTkmlCqXunrDas3Vdu%2BL6mS%2BZCBDvcEVKjBkSuxkQkqVPkdF0Z7pSqrAmOGGiYsL%2Fo%2Fdeyn1lybaW2NqUUqOfo6NkoexdWL8IBsxjd6zArJLoAGytFvTXG14aI3pcp381J44XGC3WR3%2F3ivVtNGnDdFx0oiiQBMwuEYxeOSJ8egltFLicqd89mGthXggfhGbhlyzKEhVlntJMXHmEc4F%2BpNzR6KYQIfA9g%2FcuYAsWRjUwT58VhvXVq%2BaHumtILaxRms2EGJXnrIi7IsccSxnId%2FQ1Cq2y%2FsdheHA%3D%3D",
-                    "LINEAR REGRESSION": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LINEAR%20REGRESSION/30-03-2024/AAPL?Expires=1720454803&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=bTVCYuH4QHNyWZxoJmeTUC9R3j6TP6oNw8haQgXahwNdWrlRHOAA4rNM2f1voPHlXNnJNDj8aqui2Nrz%2B%2F33kuTiVbEIw7Owtvyb9u1j0kvwhEvmaikMs8WJ8lb0it%2BXJIWj13Tb3kiPl7DPhbD1YuGWwLh%2BLaVQ4VFKG3WxDcZM4eTsaagvcoT6kLzGKrkt1WTXtjKokhviYBBISJAN%2BZHYT6jZ6nsfnrUIT044WcNfXH7U6d98aB0DIZwd2D3o9djjAbJuJRe0D0NLEJkPco0wtAT69PBFUW9e5JUCl%2B7JyimB%2BVHWFqv4evGquM%2FXCxASOcMSl5GWpUtUNQIcIg%3D%3D",
-                    "TREND": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/TRENDS/30-03-2024/AAPL?Expires=1720454803&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=U6r2Txf%2FWS5sJ6kjWtSwJUgL%2BR1OgMb1CS7s2fhNgRBK5Ejbs1wZUxaz1F%2BrwVhPDQW1TbLipQZ4Ji3QyYah72yhriawbrcOhu5QBXwI6%2Bb4YC1CyM4H4T20%2FNPbDc7AlDFxfUqgTaFwjQ0g2gBz9sACYDpem5uSgfqBsYgBK%2B8zIM%2BGpDiFJ62V1DUR%2Fkp4k8fSnTys0BN9RjCwCahySWE9KnE7XIzgi53oxRsr6dVA0BKfJpN%2Bt%2BL5i5ZnjcfZUzCUdbxr1zYrcSENjD27rnqEre8XyZjJV1FgOd6pEAVt6TfFwE1ZZCQjt1CLJD%2BiHGsOgitFaDWgyAps3QsSxg%3D%3D"
+                    "LSTM": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LSTM/09-04-2024/AAPL?Expires=1721314232&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=MfPacLdedyuFAFGkgvAtSiULdGpXeb%2B7qL4Mwinemo%2Fu0AJhOLF%2FRG4OsVqiQfilA1kZCr9YjZ3RvKvQTF%2BqeLZ8Go0zU9fGQ%2BPLkcfva4YF8nalhjEJJKZmnT%2BZdUAfYd1BZHEblyHk2eom6eeiheoRKF3YR6csWOvEIEIG1%2BSJZmQbhck7I62eu7GKrGeVbCDtF7suhWoC%2Fdvlh2irFpxphmOlTCahCYr4gSz8%2ByOBS68we7LzulKRS6Dh1yWoNvTPS7%2FN9ajRbsA%2F4%2FJzp4drg%2F6T9mk5OPlsOkYjJs5m5bzBH8tHe7Q4aBgyoUqCPW6lTAJT%2BZKTX3ftOS6REA%3D%3D",
+                    "ARIMA": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/ARIMA/09-04-2024/AAPL?Expires=1721314232&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=KvCwv8NH%2FbzQ9Tpi2fPJZ1H64yB%2BZ71y9zD1aPhhUzOJQysfonmEG51iKoPqUMV1WRO3Uh5ubc%2BJDZUlLLesQk78UWaVr9Kc0PCy2WWq0yux2xqIxscajbYcWeRY9qjqr31DsDa67HlPSYRtnMy4WiVGiuXh88Dw3oHTiU8Nzt0livq4mknTRJYvqpX9bhJECMNOtdeSvAs9voCnhcctJNYjk4Bxfvlsos3DHEdiuIWu%2FviAGiBNJkkiHof9G9HbcVUMpIEOfwHY6LyhNtPkEamLORj2Rtx44QoKFzkndweVD%2F8wbn6EFP%2BNONfy8gyv75mgmCLdo694zx60Zq6KMA%3D%3D",
+                    "LINEAR REGRESSION": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LINEAR%20REGRESSION/09-04-2024/AAPL?Expires=1721314232&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=Ar1Mx2KKxAs%2FyXwlaZqa4Txdgf4zJ7bsE2YrxVi32FPJjkYWWAVhvEXAgdiyMz61RLhqECBVHhcsgaFiqCKOmg3chLFX73ipDdukH%2BCCKFd5qp2FK7mWVkdYI%2FBPXk64QNkNRuMUAJLMyRRBbuurY4yfvzdJNAXsVR3t52CJ%2F5xIezse5J9VoynXwNU8HiDKDQHzN6XHvslXqGOcgi0ryBFbILByKw5axIO6pqOK4PKpubkhhXcxbAurozg41XkmR%2BicT8VotBclZZ8JUlnNHNYNSKquyfhHTiDr9OJJrmPYZMzXpL1CdjIJbntVmEIcI7dcR6c6vtkdtg1lYNkX1Q%3D%3D",
+                    "TREND": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/TRENDS/09-04-2024/AAPL?Expires=1721314232&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=IDgtI2%2F4ppvwyagWOoJt0eQACnaU%2F4I%2F1Wbh745YARkQwPlBFnRX3qZXqI3AKBfSLVY%2Bv0n2gspoWPl9WKHSJ7nzoafwffxwmn7%2BATfaTsU3p22zwQLaio498r2rsP8iJtYOU1E6Cb3PqgH2mIzryDK3jBdEXI4r2QKosQ7nFzFaV9FFuzzJDef8p6tebaZOSWgH4EU147f6iTevOwdDOj7anC7jSSqnaxedSGrPf77%2FP%2Fv5fzmKDY%2FLPClAS8hMCqNB1UOGJmXu1iyeh3J3FowAcDYuJoTnnhRpO3%2B7a5hSu1pE62uWXBrhGU9wfAVpDJsayXJfJJXG1qsR%2FLmCGA%3D%3D",
+                    "SENTIMENT_CHART": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/SENTIMENT_CHARTS/09-04-2024/AAPL?Expires=1721314232&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=nCNYSaHCcIpFurxhyrHcflo%2B%2FPGEORSl%2BlWLzrFCLbBOpXndZAjuYRTwlsYbnnWzapmUpppbkyvgHTKuX1eu1f1Ba8gTXuBFmPxVX%2Bmx78C7NvXwIWO9z7hlQ%2FeOzkWn24qRRa6NmTzEub06rGgYONov5jJtdP7P8Fb7AcNowASA%2FA4SJsbTISwv2agWoUvhHsh%2BlzdtJX0odzE8G3fF88ge2ooPdYCPrZ5JP0IOKEsby6piO%2BPJWOd62ELH6yZhnaDy2DYA%2FHLBeDjB1q0ja0l0dFX8CCp9PR4wOUwiI%2Bk8gReg2rGepE%2FIqBCKGxFfW3aEPQoVCwsDQek8Cmnbxw%3D%3D"
                 },
                 "RECENT_TWEETS": [
-                    "Dow Jones Futures: Will Market Rally On 'Good' Inflation Data? Nvidia AI Chip Peer Works On Base",
-                    "Tesla Deliveries Set To Plunge As Bulls Pin Hopes On FSD; BYD Leads Price War",
-                    "GM's Mary Barra on leading through crisis",
-                    "Better \"Magnificent Seven\" Stock: Apple or Tesla?",
-                    "25 Largest Automotive Companies and Suppliers in the World"
+                    "Tesla Vs. BYD: Elon Musk Teases Robotaxi After Deliveries Dive; BYD Rolls Out Pickup",
+                    "These Stocks Are Moving the Most Today: Trump Media, Tesla, BP, Maxeon, BlackBerry, Tilray, and More",
+                    "Tesla FSD Supervised 12.3.3: Improved And Showing Licensing Potential",
+                    "Why Is Everyone Talking About Tesla Stock?",
+                    "Uber: Are Robotaxis A Threat? (Rating Downgrade)"
                 ],
                 "OVERALL_RESULT": "Overall Positive",
                 "IDEA": "RISE",
                 "DECISION": "BUY"
             }
-        },
+        }
+    ],
+    "TSLA": [
         {
-            "31/03/2024": {
-                "LSTM_ERROR": 5.55110028314222,
-                "LSTM_PREDICTION": 172.13693237304688,
-                "ARIMA_ERROR": 2.203923643367122,
-                "ARIMA PREDICTION": 170.1346743828859,
-                "LINEAR_REGRESSSION_ERROR": 8.461947309613064,
-                "LINEAR_REGRESSION_PREDICTION": 184.39555215830163,
+            "10/04/2024": {
+                "LSTM_ERROR": 11.493950875092462,
+                "LSTM_PREDICTION": 173.26573181152344,
+                "ARIMA_ERROR": 5.955784525213586,
+                "ARIMA PREDICTION": 164.35570318099144,
+                "LINEAR_REGRESSSION_ERROR": 18.87451823574059,
+                "LINEAR_REGRESSION_PREDICTION": 188.28059307836406,
                 "NEXT_SEVEN_DAYS_RESULTS": [
-                    184.39555215830163,
-                    177.42164883206286,
-                    178.29100155987382,
-                    176.92488833945174,
-                    175.83581406386423,
-                    179.274989081801,
-                    177.52673558572306
+                    188.28059307836406,
+                    180.63615188939673,
+                    182.1935183368867,
+                    184.62300619280694,
+                    179.09657413859873,
+                    186.28715913708004,
+                    188.93299013475362
                 ],
                 "today_stock_results": {
-                    "today_open": 171.75,
-                    "today_close": 171.48,
-                    "today_high": 172.23,
-                    "today_low": 170.51,
-                    "today_vol": 65672700.0,
-                    "today_adj_close": 171.48
+                    "today_open": 172.98,
+                    "today_close": 175.95,
+                    "today_high": 179.22,
+                    "today_low": 171.92,
+                    "today_vol": 47392217.0,
+                    "today_adj_close": 175.95
                 },
                 "PREDICTED_IMAGES": {
-                    "LSTM": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LSTM/31-03-2024/AAPL?Expires=1720516917&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=M1cOT9sySd19Cnt7LWVWWhFBN2jXzNfMwfwJYndR%2BwQhgIW1Tr0UghLEpMa7F83k%2FGPz%2FPtME2%2Bp%2FXotwvtTKm%2BWsQkHD6fR0YB17o%2BhYYq%2B41TO4Mj26%2FwVfwaNJB1EpfuL57ONOXMXKC9z1S%2BIB5t7JN%2B2dWxlkddGWUGf4tdcpKzkH97RJcWK%2FWOidvupiEd40v%2BeKoE1CPbwuunYEpJpvOxbdG4gNuh7baImrPW4FtSizDFuQ9PQ%2FFWDGhiek9YgAAE3064uTFN1CjMKSCUT0z1hn8lfiPD25wEMq9Cz9vVbXhk6whaxm5fnKLQeP2d4lg2CNz3iEQ3dzxFe0g%3D%3D",
-                    "ARIMA": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/ARIMA/31-03-2024/AAPL?Expires=1720516917&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=Zk7r7AdrvaaSOVcp3k7qB1bpPlVlIP%2F8WTW%2BFoauswuTe3nF1tWBpxIeivRWWk%2F7rLb89j5GtQVrS16Qb9SISwVvir%2B4QauWGJsmDUvGhAVBEh5fbWPQ5Qd%2Fd6w3nvWLr%2BJPa5FdUZt2AbFGoS0FO%2FfZsoI2tdb2XfAgs2ubtIhhdztyKG%2FhQx6TlLqEkBrM4CQDJAKq43NaMSbhoDuOahJVok8Qhw8%2BLQfEPg9Um5y2kfPef5R5Mj2u4jF12nQF3GPBm7MGmC4zJSLR9a53GP6dPKMTwlBw7y2BB%2Bz5g7PXBXlYJk2h5p9pPsU6H%2BT2VIr9rl1%2FqtA8rSP3L89S5w%3D%3D",
-                    "LINEAR REGRESSION": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LINEAR%20REGRESSION/31-03-2024/AAPL?Expires=1720516917&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=T%2Bao25aZPb8iPnUHzcmO9elirsrVqimgRFJwXRacCpgIr3Ml%2FlqdzWPVJoDpHJO8piSBXYhLQxpxGzMOx0v1K1nGiODJ6k%2F%2FsS4D38dX3E%2FbK1Gaz%2F5pdZMKSVK4uYVrwc5gVuN6el7lPG0rV1AKag5y%2BGP5HufEIwQBRB6NmRLB6v0VIp0a76xrHCTrGA4ZDs6xohioeb%2FtrME3ru4FXYmHZi7IciwMIu3dL8xbtqhRAcIgE3zDLcgTVjXZ8lDF9RcceHGouiSGm3pmwTullPr0C0%2BRPs2fQrIjgIxefeGIuDJopxI85fYsUWq3Iwf4mLaoRMA3Xt8PGTJtqbs9vw%3D%3D",
-                    "TREND": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/TRENDS/31-03-2024/AAPL?Expires=1720516917&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=GOwF8jWAB0cR8cxAgREZcubs%2FcxMoPLbFmDInfdANBMEynyXi%2F6woZ%2Flo62aCLetxITuke4wD6Ka96mYqKstoiqnv1V4FohEjYPETWnzNvifW6Dw70AQeJjTaYiScfM02OrjQZuhT140wfHWP6olpldEgG9JaiPOhWKQY%2BcQwpe9juAoCH1AMFOPYL3CzprxlsXL46xFSUSuj3BXL7ORxEIs9h14LsG2zeqv4joW%2BTgwOPM%2FdIJwvLE3JlllRK62%2FqkSMCQbGj%2BPUpZN4D3edr8j01858Txt6jgIiG7iZdtP%2BI5YF9%2ByTEQ6dr6pv%2B0h095vIhKvQI6d42op9G43OQ%3D%3D",
-                    "SENTIMENT_CHART": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/SENTIMENT_CHARTS/31-03-2024/AAPL?Expires=1720516917&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=i2w6Nt2UQztushDd9Nt%2B%2BXskh8ENngEtBX1n%2BpTo4VQnka6362eY%2BvaiysgqOYXjvJqOUKSpQFy%2BbkrD8gxPY21fiZgsjcFg1R48SgjWxrF0cVHmBxNsmxaE%2FDpZgGidhYFR%2BmZ70PUvL25MzaeBLeVtBb7HglhdBE95YUSDsb3YLQlRE9TxVoBaFD818E7h9Nb0A9zblh1RgadzWqlBLp6H%2FgMxVu5kJdqpa794USl1C%2Bnu1TvndtwDZZhyuBOZdkiP8brHB%2BxfuoNGO%2Fu2QVUrSVCWN99Wm76ob7Mm%2BRnrRmHIF7RcBuKQWvn%2Fanq8GeebKjPQKbw07gO9cdtXDg%3D%3D"
+                    "LSTM": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LSTM/09-04-2024/TSLA?Expires=1721314393&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=eGwNaavGELvDpnG7VF4sTRxQ27Y4KnKK6pUYr2ODA65uLvkY0mshD%2FQF9G6pUisn4GH5WGM9MgDPZ3fwfm2qlNCRwCZh%2FGN8ytT%2BKhrbm5rdcx2guPZ8L%2BvCzev63WsiD6YhxOfrWfFFXk53LAP%2FBHEaJ9FcRccb%2FMJNYlusjdPLoJme1G4NO4Sd%2F%2BfcEzaqbGpWcMiDcL5F%2FlVhXYIwY9WnRZ2EpFoGoFOitNZc0JOmWigqcDdiO5O5%2FNbxGXkheB%2BrBzhklwATcmsQw7bKLTwZ8HPw0hn5q1ytmWKWdc2NMAys0mJPG4uK2pXXA0Rb8RbxBowclYgmAFXrkisAFQ%3D%3D",
+                    "ARIMA": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/ARIMA/09-04-2024/TSLA?Expires=1721314393&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=pV9m3MDAHLnl5UoSm3S2bmsb%2Fhk4arf%2FxGnO8jSlYIdWUtkaNXUG2vmFeFpQ9egjmlB8Su3%2F9Q0twIq%2B9px%2B%2BkJNFt%2FmyAqYSSpVHzsbAZTxbmDXW1XXD5cDj9HbbGgJE5BZ0OwWiKGe6zcxyQ7P3jkT0HH%2FnZBWkdMh%2B0xkEkAK8U0feukaoa3TPGaVXLUzgb2CNmwXzpNaGGNlPVPzL59qHFYhnLBo5mnNxMq%2BT38aiiiSCH%2FIbnzZiIFP7TM286Gxee9IYs2rpz74dtvdxLxrG6bdb2hFhFsQoFwtiz%2FvH%2FhvPe%2FAsx5XZJdUw2EhWV%2BtOiAihVc%2FcC1jr%2FTLCA%3D%3D",
+                    "LINEAR REGRESSION": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LINEAR%20REGRESSION/09-04-2024/TSLA?Expires=1721314393&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=oMTqTOV3obW7hG%2FEj%2BRdFFNx4NmhM7t74bW96rsowQ1jvFqOorIMtu6aE8f1rBJOlhTceS9gNjInfA2GHhE58f7kSD87uKEehC%2FSJh5s%2Fj0Epfvrh%2BAmOfMBB4qyJjPEgxOZx0irtDcEzdMum5xolk48d82Juifdyz5L06k1tWpUX5wCzCyoRW4JXg20qIlfLMq29qGCqDKgB22bpgxk7gsCg%2FkITccprHP1ms%2BNIOS4wlmTqCluF9AJoKxTEoHfdzjSCQpFMO%2FCle46borXI3JPJqHClgaC39vC6PZKf5kTD7H8FhgD5pzJiDcuQL9kYChMv7kz5y4ZwbbLbTDpRA%3D%3D",
+                    "TREND": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/TRENDS/09-04-2024/TSLA?Expires=1721314393&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=gSvHDIGoEV%2FA0%2B8p2aAxCTHFeoOOgD63qIF0E2yPDyOqdD01ZV4qj7MzkKZgop6MoCuMc0MbG8P54myniHIt%2FBZfyyKCYejz7gQcliU%2B%2FinPcWpX%2FKB%2BQ4JTzZRAD317iLsFmX6hwju1AQ4Png1JZZq%2F0G3X0zSe%2BXkaGwiVgc4dJScZYkLBPooGmL7DOY0yviZoarXOxZC4WWszfDHRg2JdrQVQM6fW1EF%2F0mIz8iJxdSfeh2BrwBbEbJoHacWXMQqERInhnbJWQTDRY3BtP2Ha13%2F2uWjUUYc0uhANCaKJxgYFca%2FcLem77iAGIcKhqEoM04clhxwGwbBo4Hdchg%3D%3D",
+                    "SENTIMENT_CHART": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/SENTIMENT_CHARTS/09-04-2024/TSLA?Expires=1721314393&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=UwzZ3D5zujS%2FVkM8cS9zCB0nt2WioDjPxVJq8P1hOmAXU1Uzs%2Ba9NT5HGHdML4flIJYj6%2BAyw7r91EU90y794q2i0qwavtcQ7GAwJ55veTUkAr4aXXXL2I%2FXRj0r%2Bu7yju6AJbOyXoIfedQLKuBN1NOVKM2ndoD%2FPpmbjDPkmFRwvfGplYHUjzXCol2OuALtdvF4vIFepk7CkGp8i6nBMm58vVJ2poptyJ4WoSJlKVtSHooFES2MS9x%2F5Bc9Z%2FFE7eFg6h2Q%2BJ9J9zfCyN2bCs2gg7CBXuBcV9DnudeQE3wjd%2B3%2FDDptzaKh2yqp574OtKeDOgZUVAvmEj0pN8sw3Q%3D%3D"
                 },
                 "RECENT_TWEETS": [
-                    "Dow Jones Futures: Will Market Rally On 'Good' Inflation Data? Nvidia AI Chip Peer Works On Base",
-                    "Tesla Bull Says EV Giant Already Has A $25K Car: 'It's Called A Used Model Y'",
-                    "Tesla Deliveries Set To Plunge As Bulls Pin Hopes On FSD; BYD Leads Price War",
-                    "Can Tesla (NASDAQ:TSLA) Compete with BYD, LI, NIO, XPEV on Value?",
-                    "From Six Figures to Seven: 3 EV Stocks Set to Make Millionaires"
+                    "Tesla Vs. BYD: Elon Musk Teases Robotaxi After Deliveries Dive; BYD Rolls Out Pickup",
+                    "These Stocks Are Moving the Most Today: Trump Media, Tesla, BP, Maxeon, BlackBerry, Tilray, and More",
+                    "Tesla FSD Supervised 12.3.3: Improved And Showing Licensing Potential",
+                    "Why Is Everyone Talking About Tesla Stock?",
+                    "Uber: Are Robotaxis A Threat? (Rating Downgrade)"
                 ],
                 "OVERALL_RESULT": "Overall Positive",
                 "IDEA": "RISE",
                 "DECISION": "BUY"
+            }
+        }
+    ],
+    "GOOG": [
+        {
+            "10/04/2024": {
+                "LSTM_ERROR": 6.025012382663491,
+                "LSTM_PREDICTION": 151.853515625,
+                "ARIMA_ERROR": 2.3712293752208127,
+                "ARIMA PREDICTION": 153.76651646109684,
+                "LINEAR_REGRESSSION_ERROR": 6.302175876922043,
+                "LINEAR_REGRESSION_PREDICTION": 159.63005611839034,
+                "NEXT_SEVEN_DAYS_RESULTS": [
+                    159.63005611839034,
+                    159.02181016313165,
+                    159.5045413068518,
+                    155.2275504447483,
+                    157.15847501962887,
+                    159.28248910564042,
+                    160.52957893441672
+                ],
+                "today_stock_results": {
+                    "today_open": 157.44,
+                    "today_close": 157.43,
+                    "today_high": 159.89,
+                    "today_low": 157.28,
+                    "today_vol": 8098679.0,
+                    "today_adj_close": 157.43
+                },
+                "PREDICTED_IMAGES": {
+                    "LSTM": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LSTM/09-04-2024/GOOG?Expires=1721314472&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=neGhOtbABVJjqwXJq8w7QSJniClIOOIspl7V2w%2BLfIA7whHhDxgigpsakxJH%2B8QijUSEXO64TLktix6iMfeby7%2BQJHhFUBsekT%2FvHl8uqF15O6iEBjy5JWhyt5NGvIqkFQnlYKGIbb0ajz7vZ3TEDDtMFnYVRpxxkaOYm6V1KhBsoFjnWfauhcROoo7uld9OkoU63d2aaZqCy2C9xHwJ2t4oJPpSj1EIoCtKAfOJGBLgYDI%2F%2F3WkacA%2FhGWc0rBGjrSa%2B8h61E9wE5YkKv0gfPMAT2Cke0CgIGSODtDRyxoHPuL95h%2F9TBtM9e8v5sbBbJVnzZ2xiRfKr1XrJBdHXg%3D%3D",
+                    "ARIMA": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/ARIMA/09-04-2024/GOOG?Expires=1721314472&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=FM2TFoE48Ls3IYEAeR7bpkZKvyELly%2FaWrwJr8mPh3dtepVSNOe22uQObKLBW2t1eAzVKImrWA3rbTSjiKhmd5NZP0%2Blc1QBB0YDhp4XppYb9kM%2Bo%2BaR%2FbgMghUyir93sMB58Cx8sAeAbqNKCidOTXwfd3zk%2BrjRc7SJRmx%2BALdVKg6e%2BXQt0jh1NGk0XLWYhLNXiglzynWraAeZGQAU%2FrQOuSdGXUfA4VpCoo4qBcgwwY%2FKsbK4VbKaS%2BwaKA70m1mfN0FAP5vnW3RE6TtHXDZIdrlV6ylC%2F0LnnaBc7RyuFL2agD0WY9kGAQBUGi7Q1AuZlF9Lk6jpXxZxOeR4iA%3D%3D",
+                    "LINEAR REGRESSION": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LINEAR%20REGRESSION/09-04-2024/GOOG?Expires=1721314472&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=qdrdhUCyCYblhU2tKMHcmtyHV5MGJHn5MckmkvbbSfJWqMUC2IOAty4THRemuPnxPjoi2%2FlHo%2FNvwWruRFfCex7O7MVzG2QoXvAj1PJCpR3QFtiasmf9wqiyBdlfhltcypyhDrK9ouMTb5z9py0neMGdqB3yobCzp4j5f6Dkl53PHHYZ%2FPGUe%2B55uROTWwkA5D6j%2FfIBi2c8cM00qKOW0%2FpJtbhuCu8lQeaDB1jtLSPuU2kUq84O7i91uDypykeWV0qqGHYLeNH8gkh3MKxGesusXATtXYi7OMpFZZae6mPHdNHJdHYqP3%2BNjFF5cZ1%2FVyL4OZEiyeRQKL4gbEQuRQ%3D%3D",
+                    "TREND": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/TRENDS/09-04-2024/GOOG?Expires=1721314472&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=KF8st%2Bq00HIlGPx2KpWsNJ02j%2FeEGEFzkhuoEg5C6y9YFNXTI1dc8%2FO5FCQfWXdgIvbej40zkQ68t%2Fr9AfTd6puJ4oil4HmV1Cf%2FUDUjU46facMBK60RwoB9qXRnS5xdNGAhu%2B8xuukxqRKjLRDqPP1TSHBsvuMr%2FIKJ%2BWzlgK2aEPJLWGdkk%2B35ka5ngoli9O3fcZbvO3lokCXoJsGGiRqn0%2BUCJRT%2FXuMrLzVBNHwWniZF3bUyM06Y%2Fd9Pb6Fcp7Jw7GfdM%2BEoSkexSwPxczkA4VOO0Liz9kBawDlgAs6ki2B5Y0rsz11zptgviPMExRO2u6n%2BnXlRxmlKEkgxTg%3D%3D",
+                    "SENTIMENT_CHART": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/SENTIMENT_CHARTS/09-04-2024/GOOG?Expires=1721314472&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=k4hS0cVjqVMSXMzP7Tzps%2B5%2BJfGSDaxODTlj9F5AL96OEpzXP4ATsufKaeimT1gT5fVlg0P51ku3U3dc4peojPMKh58%2BCBwUDMByVz5cU%2BNIhtfchiWPjR%2FUvfODuNbUYALnhO4DRhP5UQLhZTZH6zPoNWkloOD4qsyBXKXqkO1KD8YRlrEoDB68I7V1YFqo0B58HzIahIn990VEBXNT4zqGYTTWKZEHwBQCDE4jliOBGQIe1sYqkJLCmRmYRiIJ1TNotrf98VOVxsptkf77%2BgTOqCkA4Gdy9Urc12mFEtAW2JhN4p5i7PqquVTdShoNylZh55aD1BZaOXzkLry37Q%3D%3D"
+                },
+                "RECENT_TWEETS": [
+                    "Tesla Vs. BYD: Elon Musk Teases Robotaxi After Deliveries Dive; BYD Rolls Out Pickup",
+                    "These Stocks Are Moving the Most Today: Trump Media, Tesla, BP, Maxeon, BlackBerry, Tilray, and More",
+                    "Tesla FSD Supervised 12.3.3: Improved And Showing Licensing Potential",
+                    "Why Is Everyone Talking About Tesla Stock?",
+                    "Uber: Are Robotaxis A Threat? (Rating Downgrade)"
+                ],
+                "OVERALL_RESULT": "Overall Positive",
+                "IDEA": "RISE",
+                "DECISION": "BUY"
+            }
+        }
+    ],
+    "MSFT": [
+        {
+            "10/04/2024": {
+                "LSTM_ERROR": 7.959496304431948,
+                "LSTM_PREDICTION": 419.350830078125,
+                "ARIMA_ERROR": 4.51896445394065,
+                "ARIMA PREDICTION": 425.77239130306583,
+                "LINEAR_REGRESSSION_ERROR": 15.578817329238117,
+                "LINEAR_REGRESSION_PREDICTION": 441.95393200786543,
+                "NEXT_SEVEN_DAYS_RESULTS": [
+                    441.95393200786543,
+                    438.7252663599391,
+                    437.70407068096085,
+                    435.0530542534183,
+                    442.9338580340958,
+                    441.97455109447856,
+                    440.2003337805792
+                ],
+                "today_stock_results": {
+                    "today_open": 426.46,
+                    "today_close": 422.87,
+                    "today_high": 427.73,
+                    "today_low": 421.63,
+                    "today_vol": 4373113.0,
+                    "today_adj_close": 422.87
+                },
+                "PREDICTED_IMAGES": {
+                    "LSTM": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LSTM/09-04-2024/MSFT?Expires=1721315039&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=bhqCGdkdWRYpHk1f7tvrHGQ4ezgTc1EXH9EyJSZOpVgOGtxV9YQBZc9XdIgGTw9uGYPBRYTeTSGTflaYurPkIk1ntIJhCqA%2BnokULQ2KzCbsThbpbfJfPrHADRkoJcm0485f82cVpj%2FW4GAzNgfrjElAhw2BEoQOlVj%2FmfFLz7HolcTTqU6pxrFMYLINGRw5DSu%2FTLIQ1Q%2BV4TS8QjOLi76%2F31H%2BhWiCz%2FJuBtNpp0vkQpLkav4bAvYkP%2BfjIGXQ5OZw1pPXwBJiNFRkHfV4seG0TnmVXp4sFqGd2IiYSvW2sZ7THYu5pXX6%2BWPabjfgz9NvdrvAFTPOapTSv3zTjw%3D%3D",
+                    "ARIMA": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/ARIMA/09-04-2024/MSFT?Expires=1721315039&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=V6cwti7KT9%2BKu%2F4Noce%2FLE%2BrzFDB96xSPfNsAnXTndE0xq59LXejAvyG3tcgIeneikd1UaGsQRSQmGJpGRoZv4crmyl8BaCqSSFKa0rEeJrlhustxqDDw2fW6lqs54YA8SEipW2Agn%2FMiIcYm%2FqiNX4mdEp6ib748AWblJDIweKEl9v4r8e1M4hc2rT9iYFwc1EUYLnAFYHxhDItuReYiEoG55d69wUFUf%2BuIaXnG3%2FbFnjbqnKT2Z2BDsRCvprMQGIdghhUu5rz89TfauKPrztlYUPw9wGF2gbVqp47LRKFc%2Bu8SWH8eeBbVfel%2BZ7PDTcDQ0L2cbzxA9A8lUsh7Q%3D%3D",
+                    "LINEAR REGRESSION": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LINEAR%20REGRESSION/09-04-2024/MSFT?Expires=1721315039&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=a0AM7SIM6BRbeUc9H5Adayi6o5rjkvmJmYtVJDNLj%2B1cBjgW9IPqErLHeSBHgs%2FYHOOXkdFExZS4%2FJ%2F3R9Njz3t6S7HFThxFKNcylwuX8oX1PawiI%2FIyaozXkOINHfLuk4aPxXe9wll9bHnu5EuEnPi%2BJ6hUfY8mc5yXChQ0CUU%2B6P9a1TCuYCjsQ3boc7WP4PLNqPraKUFVFckqFM3l9PmHbeu7hA5GzYOhzy%2BeroK0Eyb47V3em0Xus0O7ysp9cSbli%2BgJPACHE12hV67SLdR8jruRLsIbejILsf1LvdzYm803XQ1Mpmc48eBsXkzORITPDiB9troMDuGhS5c5xA%3D%3D",
+                    "TREND": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/TRENDS/09-04-2024/MSFT?Expires=1721315039&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=VZxSFyPB3VRgJFB6BeDz9kg44QgoZDZeFQ0cRIsNluugrviZNd4K9sRkhkzjdxH7%2FdHusiiJwuHps%2FqOutzRw1Sl4hZw%2B5KSh2EdE0yQ4gA0XoL6%2FBcs5i%2BTmQeWwzkh8HXaAalvm%2BUIecu9U9JNYzo0TU9haVCO977tq60GjAOLDC1%2BzgjHK5qxaAd5lPvxD41MCrblJI9jtPjKVPMV3ryt9FHHjtIzzEB6q5fQErLYMB4lCGyNc31uQPDt%2F436D5Tp4hXaGqLywwG9Zyb2SXj60kaeFDeIJ%2FsZ1PkFTxLtXQplrHUYsOekF30J%2FI0TkQCb6kqkUX2IQRD1M%2FJArw%3D%3D",
+                    "SENTIMENT_CHART": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/SENTIMENT_CHARTS/09-04-2024/MSFT?Expires=1721315039&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=gqEq%2F77NJzw39xhwnAC6NbqRJYB10kJVKOxr33o4lR17xcEWLSAsU7GJaTFSTG6Ea%2B0j9iGyAGu%2FksgPHzMn9yYSW49tjQ6k6LSAykm0IEkC3zJQzr%2BTyzdc1SJlpJtNc9WHFUIHIWHSTN89imWM5HrfAUWCYY93je3%2BeR5ttkC3sDW9pfFWVmXsHNr0sENVZm5rF06hWUj75idA6wfHfQHISwQbuW1JStu3YFqWj7eEhHicwx8wa%2BeZ3f64mxp9inGaviSsfqgHyu6GTs6WAYfc%2F3H1SdZrrDCvrr3LquIrZO32AjY1dDyqo5M02DndLYZ%2F0yoIlaMh6SgDlyi2hw%3D%3D"
+                },
+                "RECENT_TWEETS": [
+                    "Tesla Vs. BYD: Elon Musk Teases Robotaxi After Deliveries Dive; BYD Rolls Out Pickup",
+                    "These Stocks Are Moving the Most Today: Trump Media, Tesla, BP, Maxeon, BlackBerry, Tilray, and More",
+                    "Tesla FSD Supervised 12.3.3: Improved And Showing Licensing Potential",
+                    "Why Is Everyone Talking About Tesla Stock?",
+                    "Uber: Are Robotaxis A Threat? (Rating Downgrade)"
+                ],
+                "OVERALL_RESULT": "Overall Positive",
+                "IDEA": "RISE",
+                "DECISION": "BUY"
+            }
+        }
+    ],
+    "AMZN": [
+        {
+            "10/04/2024": {
+                "LSTM_ERROR": 3.9523155399551175,
+                "LSTM_PREDICTION": 183.147705078125,
+                "ARIMA_ERROR": 2.4544631059944306,
+                "ARIMA PREDICTION": 184.96128892178461,
+                "LINEAR_REGRESSSION_ERROR": 5.665193993455372,
+                "LINEAR_REGRESSION_PREDICTION": 178.54888440531437,
+                "NEXT_SEVEN_DAYS_RESULTS": [
+                    178.54888440531437,
+                    178.29884874436704,
+                    179.83478987642724,
+                    177.68268457063195,
+                    182.21014228134848,
+                    182.31729652863405,
+                    182.71913858187642
+                ],
+                "today_stock_results": {
+                    "today_open": 187.25,
+                    "today_close": 185.64,
+                    "today_high": 187.34,
+                    "today_low": 184.91,
+                    "today_vol": 12713320.0,
+                    "today_adj_close": 185.64
+                },
+                "PREDICTED_IMAGES": {
+                    "LSTM": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LSTM/09-04-2024/AMZN?Expires=1721315173&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=fyh4CLetZn1Nq1OQ5hfnLu28vgsnKn7uJPhAIrmjT%2BMSLra4WRT1GyK8v34SJd2uf%2FBvRMga%2F2R9%2BMdTXv4szQ74RwCj04kiHQ2OVWlintXLC7w3JFpJN2rVwCoRSXGx5iaamO5nQazSQcNVBXYDMyhaNFux8l90nuCgmfm1I%2F30PCwqHpdKLle%2FZAZmH20wlg4BZ%2FcphTc7KFpGdiiehAOSxd7ia0vB1tVnGOM0kTeZiDjErrDaXnz2MwbQasI1%2BmEfzT%2FM%2FXlnMAowlEQv1MbmpLZ1jThxc3NnmwB%2FGN25JP8sGZpnr58AgRYM3gZtVSlZjSR0KDibbdWzLMc%2Bzg%3D%3D",
+                    "ARIMA": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/ARIMA/09-04-2024/AMZN?Expires=1721315173&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=gqgt%2BRn1yrZ0gblJa%2BYxz3JKybvkpYQ7VsUOLivPSOoGfHEEAofbfsZgvw1vUpluGKfP0k0w3SrzRd2ngl2U7Z8b6wW8r4VR6JbIv5dF6OelnUDO8xDRCEYAox9dl5I5mCxHPhGNEbEtggRZGsxRN31zfkSeuOj5poIC6VFQh91SRf65AbOagYaP45hQmxLOIiMX6YPdzARSAab7TFd7xenhEYJoPl5VcsZ67kl7N6z9OkL%2FTAlkaVobenpqpAeaCCCZZibVm8sb6skZZ%2FpRtqJcyHRU097%2F1Ql6t2L%2Fl74ulvHE3tHmLaJ%2BNOiWiGwVV3js6q9RoyOMTsT%2BNQNE4A%3D%3D",
+                    "LINEAR REGRESSION": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/LINEAR%20REGRESSION/09-04-2024/AMZN?Expires=1721315173&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=Un9RkPnrcQKExTYfgQtP3oYEMS6a%2FFpAHswXsfGjYUdLTXJpGbW4B8xoTgOLnIv4%2FnX23Hwq8spjZNL%2BXrjNPthYwN2JS8NJqS5gf5LPIamHfxkLXrs9wmyIiiSTvX1FWNgrO0KrOLfbIXkdAVD09UccA%2FisQHjtNxQ1rdQecMobLKHUFFThANPj1wTUi%2B4qg1kQp6zSG2vAEntaRw5WAKBfC7%2FcUViZppaOWC4rhUrdv8UOU3RdI%2BzIB6uUXV%2FNEzkvpG2y5573OhjmzhTV1w3bgn6qP%2Fj64TzxGeQ0ykTvIoQD2qcakxKHVCoKhUOGtmcYJukv0ElouYts9P8Fvw%3D%3D",
+                    "TREND": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/TRENDS/09-04-2024/AMZN?Expires=1721315173&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=UpUwBA814e1HJAHb6%2FqaSpINPU%2FSutnZODx4QN1Wi9C43DzOzNuty4NS3D4e0ulA5i30VChSjwhZK1VF%2FnXOoQHC%2FvHxeAPym%2FrHdgii38at1mamk6IIDv%2Bj8pjhEGUPlEyEAY1jEEDmdy0hOdxHNQmnSuNu36AWVaTiXh6sqN6ThsJQAUyYRiFJkM%2FR3IioYe2zW2M3TcpOQDCP6iVslq59DQlxW0cFQaiONShalW0JN%2BL%2Bjg1s6xa6N3jH%2FZmkbG1KKUDnM7dmDca7659lZuG59bUn5i0bvV%2FIyW7QxLiUxrddO7oT79tQqL%2Bh7YrtTo%2BQghM8auH4Waywe88r5g%3D%3D",
+                    "SENTIMENT_CHART": "https://storage.googleapis.com/stock-price-prediction-74e2b.appspot.com/SENTIMENT_CHARTS/09-04-2024/AMZN?Expires=1721315173&GoogleAccessId=firebase-adminsdk-7vgor%40stock-price-prediction-74e2b.iam.gserviceaccount.com&Signature=Sg2zof2abZ3I6fgTFdSOi91jtv6ip4VIqs%2BI1sc2E83lRpX8WymxLcESzt2f8ULX2Sbu9v2UohIwFndrmPdRKCw9nZtp2tNmbpI42PfJVamnpi4U0ZnXE40yfDZahu3PEm3cP6kYcks0hczfJQvIgWIjZcZVGFAakZ%2B6FiCacbxcvi%2BNJrks3L19enTBr1fEedKH0ojRA0LNfNHh5DYz6Qd4y%2BaS2i2E8ApQbHr3%2FpFDTwSBj%2BWdcakveBcf4V2ik3rGkGY6M5mcXV7XKhwXd0k8gWC3mDbCBKJ8OLKil%2FErRwYxKmfiVtXEyqZ7OQNoHhlRzlctaKEwF6D%2BIUd4xw%3D%3D"
+                },
+                "RECENT_TWEETS": [
+                    "Tesla Vs. BYD: Elon Musk Teases Robotaxi After Deliveries Dive; BYD Rolls Out Pickup",
+                    "These Stocks Are Moving the Most Today: Trump Media, Tesla, BP, Maxeon, BlackBerry, Tilray, and More",
+                    "Tesla FSD Supervised 12.3.3: Improved And Showing Licensing Potential",
+                    "Why Is Everyone Talking About Tesla Stock?",
+                    "Uber: Are Robotaxis A Threat? (Rating Downgrade)"
+                ],
+                "OVERALL_RESULT": "Overall Positive",
+                "IDEA": "FALL",
+                "DECISION": "SELL"
             }
         }
     ]

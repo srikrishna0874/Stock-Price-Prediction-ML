@@ -21,7 +21,7 @@ def SENTIMENT_ANALYSIS(quote):
     loaded_vectorizer = pickle.load(open('tfidf_vectorizer.sav', 'rb'))
     end = dt.datetime.now().strftime("%Y-%m-%d")
     res = finnhub_client.company_news(
-        'TSLA', _from="2020-06-01", to=end)
+        quote, _from="2020-06-01", to=end)
     tweets = []
 
     for i in res:

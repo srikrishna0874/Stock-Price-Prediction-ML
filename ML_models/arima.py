@@ -29,6 +29,7 @@ def ARIMA_ALGORITHM(df, quote):
             obs = test[t]
             history.append(obs)
         return predictions
+    
 
     for company in uniqueVals[:10]:
         data = (df.loc[company, :]).reset_index()
