@@ -1,26 +1,24 @@
+import re
+import math
+import requests
+import yfinance as yf
+from flask import Flask, Response, render_template, redirect, send_file, url_for, request, send_from_directory
+import datetime as dt
+import pandas as pd
+from ML_models.lstm import *
+from ML_models.arima import *
+from ML_models.linear_regression import *
+from ML_models.sentiment import *
+from Firebase.firebase import *
+import json
+from datetime import date
+import finnhub
+from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
+from numpy import exp
+from sklearn.feature_extraction.text import TfidfVectorizer
 import os
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
-
-from sklearn.feature_extraction.text import TfidfVectorizer
-from numpy import exp
-from nltk.stem.porter import PorterStemmer
-from nltk.corpus import stopwords
-import finnhub
-from datetime import date
-import json
-from Firebase.firebase import *
-from ML_models.sentiment import *
-from ML_models.linear_regression import *
-from ML_models.arima import *
-from ML_models.lstm import *
-import pandas as pd
-import datetime as dt
-from flask import Flask, Response, render_template, redirect, send_file, url_for, request, send_from_directory
-import yfinance as yf
-import requests
-import math
-import re
-
 
 
 def final_result(global_polarity, today_stock, mean):
@@ -86,7 +84,7 @@ def common_ml_code(quote):
     error_arima, arima_pred = ARIMA_ALGORITHM(df, quote)  # type: ignore
     linear_regression_pred, error_linear_regression, forecast_set = LINEAR_REGRESSION_ALGORITHM(
         df, quote)
-    #recent_tweets, global_polarity, tw_polarity = SENTIMENT_ANALYSIS(quote)
+    # recent_tweets, global_polarity, tw_polarity = SENTIMENT_ANALYSIS(quote)
     lstm_pred, error_lstm, recent_tweets, global_polarity, tw_polarity = LSTM_ALGORITHM(
         df, quote)
     mean = forecast_set.mean()
@@ -106,7 +104,8 @@ def common_ml_code(quote):
         'static/LINEAR_REGRESSION/'+quote+'.png', today_date_in_string_for_firebase, quote)
     uploadTrendsFile('static/trends/'+quote+'.png',
                      today_date_in_string_for_firebase, quote)
-    uploadSentimentChartsFile('static/SENTIMENT_CHARTS/'+quote+'.png',today_date_in_string_for_firebase,quote)
+    uploadSentimentChartsFile('static/SENTIMENT_CHARTS/' +
+                              quote+'.png', today_date_in_string_for_firebase, quote)
     result_images = getImageLinkFromFirebase(quote)
     new_data = {
         today_date_in_string: {
@@ -202,6 +201,41 @@ def get_today_stock_results(quote):
     return required_result
 
 
+# Function to preprocess tweet text
+
+def preprocess_tweet(tweet):
+    port_stem = PorterStemmer()
+    tweet = re.sub('[^a-zA-Z]', ' ', tweet)  # Remove non-alphabetic characters
+    tweet = tweet.lower()  # Convert text to lowercase
+    tweet = tweet.split()  # Tokenize text
+    tweet = [port_stem.stem(word) for word in tweet if word not in stopwords.words(
+        'english')]  # Remove stopwords and apply stemming
+    tweet = ' '.join(tweet)
+    return tweet
+
+
+def get_sentiment_for_news(news):
+    # Load the model
+    loaded_model = pickle.load(open('trained_sentiment_model.sav', 'rb'))
+
+    # load the vectorizer
+    loaded_vectorizer = pickle.load(open('tfidf_vectorizer.sav', 'rb'))
+    tweets = [news]
+    preprocessed_tweets = [preprocess_tweet(tweet) for tweet in tweets]
+    X_new = loaded_vectorizer.transform(preprocessed_tweets)
+
+    # Make predictions
+    predictions = loaded_model.predict(X_new)
+    sentiment = ""
+    for i, prediction in enumerate(predictions):
+        if prediction == 0:
+            sentiment = 'Negative'
+        else:
+            sentiment = 'Positive'
+    required_result = {'sentiment': sentiment, 'news': news}
+    return required_result
+
+
 def get_next_seven_days_stock_results(quote):
 
     return {}
@@ -234,6 +268,13 @@ def search_function():
 def get_next_seven_days_results_function():
     quote = request.args["quote"]
     required_result = get_next_seven_days_stock_results(quote)
+    return Response(status=200, content_type='application/json', headers={'content-type': 'application/json'}, response=json.dumps(required_result))
+
+
+@app.route('/get_sentiment', methods=['POST', 'GET'])
+def get_sentiment():
+    news = request.args['news']
+    required_result = get_sentiment_for_news(news)
     return Response(status=200, content_type='application/json', headers={'content-type': 'application/json'}, response=json.dumps(required_result))
 
 
