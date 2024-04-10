@@ -17,6 +17,7 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from numpy import exp
 from sklearn.feature_extraction.text import TfidfVectorizer
+from nltk.corpus import stopwords
 import os
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
